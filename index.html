@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Survey Form</title>
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </header>
+    
+    <!-- main content -->
+
+    <main>
+        <div class="main">
+          <form id="survey-form">
+              <div class="submain">
+                <label id="name-label" for="name">Enter your name: </label>
+                <input id="name" type="text" placeholder="Ex: Pablo Azevedo" required>
+              </div>
+                
+              <div class="submain">
+                <label id="email-label" for="email">Enter your email: </label>
+                <input id="email" type="email" placeholder="Ex: pablo@email.com" required>
+              </div>
+              
+              <div class="submain"> 
+                <label id="number-label" for="number">Enter your Age:</label>
+                <input id="number" type="number" min="18" max="120" placeholder="Ex: 36" required>
+              </div>
+              
+              <div class="submain">
+                <label class="dropchoose" for="dropdown">Labore et dolore magna aliqua:</label>
+                <select id="dropdown">
+                    <option value="">Choose an option</option>
+                    <option value="lorem">Lorem</option>
+                    <option value="ipsum">Ipsum</option>
+                </select>
+              </div>
+              
+              <div class="submain">
+                <label for="choose" class="radone">Lorem ipsum dolor sit amet?<br><input type="radio" name="choose" value="yes" checked>Yes</label>
+                <label><input type="radio" name="choose" value="no">No</label>
+              </div>
+              
+              <div class="submain">
+                <label for ="loremcheck">Sed do eiusmod tempor incididunt ut labore:</label>
+                <label><input id="loremcheck" name="lorem1" type="checkbox" value="lorem1">Lorem</label><br>
+                <label><input id="loremcheck" name="lorem2" type="checkbox" value="lorem2">Ipsum</label>
+                <label><input id="loremcheck" name="lorem3" type="checkbox" value="lorem3">Elit</label>
+              </div>
+              
+              <div class="submain">
+                <label class="tarea">Tell me more about yourself:<br><textarea rows="4" cols="52" placeholder="I like icecream..."></textarea></label>
+              </div>
+            <button id="submit">Submit</button>
+          </form>
+        </div>
+      
+    </main>
+    
+
+    <!-- FOOTER -->
+    <!-- <footer></footer> -->
+
+  </body>
+
+</html>
